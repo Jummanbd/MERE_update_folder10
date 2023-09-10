@@ -44,7 +44,7 @@ app.post("/api/register",upload.single("picture"), register );
 app.use("/api", authRoutes);
 const PORT = 8080
 mongoose
-  .connect(process.env.MONGO_URL, {
+  .connect('mongodb+srv://vercel_myproject:vercel_myproject@cluster0.if7p4vv.mongodb.net/?retryWrites=true&w=majority', {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   
