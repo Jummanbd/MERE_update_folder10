@@ -32,7 +32,7 @@ const Home = () => {
      }
      formData.append("picturePath",values.picture.name);
 // res fetch
-      const resFetch = await fetch('http://localhost:8080/api/register',{
+      const resFetch = await fetch('https://mere-update-folder10-ogjb.vercel.app/api/register',{
         method: 'POST',
         body: formData,  
        });
