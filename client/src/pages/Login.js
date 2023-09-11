@@ -20,7 +20,7 @@ const Home = () => {
     validationSchema:loginSchema,
     onSubmit :async (values, onSubmitProps) => {
       
-        const loggedInResponse = await fetch("http://localhost:8080/api/login", {
+        const loggedInResponse = await fetch("https://mere-update-folder10-kned.vercel.app/api/login", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify(values),
