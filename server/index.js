@@ -35,7 +35,7 @@ const storage = multer.diskStorage({
 });
 const upload = multer({ storage });
  app.get('/', (req, res) => {
-    res.status(201).json("Home GET Request");
+    res.status(200).json("Home GET Request");
 });
 // Router 
 app.post("/api/register",upload.single("picture"), register );
