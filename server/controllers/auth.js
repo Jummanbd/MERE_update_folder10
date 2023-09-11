@@ -18,8 +18,7 @@ export const register = async (req, res) => {
                 error: "Email is taken already"
             })
         }
-        const salt = await bcrypt.genSalt();
-        const passwordHash = await bcrypt.hash(password, salt);
+        const passwordHash = await bcrypt.hash(password, 10);
         const  newUser = new User ({
         firstname,
         lastname,
