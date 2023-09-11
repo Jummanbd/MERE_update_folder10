@@ -20,7 +20,7 @@ import Nav from "./Nav.js";
   useEffect( () => {
  async function fetchData() {
   const token = localStorage.getItem('token');
-  const profiles =await fetch(`http://localhost:8080/api/user/${id}`, {
+  const profiles =await fetch(`https://mere-update-folder10-kned.vercel.app/api/user/${id}`, {
     method:'GET',
     headers : { "Authorization" : `Bearer ${token}`}
   });
