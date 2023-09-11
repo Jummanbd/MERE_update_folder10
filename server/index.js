@@ -34,7 +34,9 @@ const storage = multer.diskStorage({
   },
 });
 const upload = multer({ storage });
- 
+ app.get('/', (req, res) => {
+    res.json("WELL COME SIR !")
+});
 // Router 
 app.post("/api/register",upload.single("picture"), register );
  app.post('/api/post', upload.single("picture"),Post);
