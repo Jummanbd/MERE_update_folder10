@@ -28,7 +28,7 @@ const initialValues ={
          }
          formData.append("picturePath",values.picture.name);
     // res fetch
-          const resFetch = await fetch('http://localhost:8080/api/post',{
+          const resFetch = await fetch('https://mere-update-folder10-kned.vercel.app//api/post',{
             method: 'POST',
             body: formData,  
            });
