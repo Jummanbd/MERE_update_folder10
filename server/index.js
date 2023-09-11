@@ -39,7 +39,6 @@ const upload = multer({ storage });
 app.post("/api/register",upload.single("picture"), register );
  app.post('/api/post', upload.single("picture"),Post);
 app.use("/api", authRoutes);
-const PORT = 8080
 mongoose
   .connect('mongodb+srv://vercel_myproject:vercel_myproject@cluster0.if7p4vv.mongodb.net/?retryWrites=true&w=majority', {
     useNewUrlParser: true,
@@ -47,6 +46,6 @@ mongoose
   
   })
   .then(() => {
-    app.listen(PORT, () => console.log(`Server Port: ${PORT}`));
+    app.listen(8080, () => console.log(`Server Port: 8080`));
   })
   .catch((error) => console.log(`${error} did not connect`));
