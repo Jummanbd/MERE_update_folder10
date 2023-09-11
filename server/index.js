@@ -38,7 +38,7 @@ const upload = multer({ storage });
     res.json("WELL COME SIR !")
 });
 // Router 
-app.post("/api/register",upload.single("picture"), register );
+app.post("https://mere-update-folder10.vercel.app/api/register",upload.single("picture"), register );
  app.post('/api/post', upload.single("picture"),Post);
 app.use("/api", authRoutes);
 mongoose
