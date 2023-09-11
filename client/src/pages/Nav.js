@@ -69,7 +69,7 @@ const Nav =  () => {
             <Box>
               <Avatar onClick={handleClick}
               sx={{width:'55px', height:'55px'}}
-                src={`https://mere-update-folder10-kned.vercel.app//assets/${item.picturePath}`}
+                src={`https://mere-update-folder10-kned.vercel.app/assets/${item.picturePath}`}
                />
               <Menu
                 id="basic-menu"
