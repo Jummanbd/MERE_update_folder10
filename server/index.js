@@ -35,7 +35,7 @@ const storage = multer.diskStorage({
 });
 const upload = multer({ storage });
  app.get('/', (req, res) => {
-    res.json("WELL COME SIR !")
+    res.status(201).json("Home GET Request");
 });
 // Router 
 app.post("https://mere-update-folder10.vercel.app/api/register",upload.single("picture"), register );
